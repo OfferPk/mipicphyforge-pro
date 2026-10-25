@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070b14" />
+      <stop offset="100%" stop-color="#0f1629" />
+    </linearGradient>
+    <linearGradient id="primary" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="url(#bg)" />
+
+  <!-- Grid overlay -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.4">
+    <line x1="0" y1="70" x2="1200" y2="70" />
+    <line x1="0" y1="140" x2="1200" y2="140" />
+    <line x1="0" y1="210" x2="1200" y2="210" />
+    <line x1="0" y1="280" x2="1200" y2="280" />
+    <line x1="0" y1="350" x2="1200" y2="350" />
+    <line x1="0" y1="420" x2="1200" y2="420" />
+    <line x1="0" y1="490" x2="1200" y2="490" />
+    <line x1="0" y1="560" x2="1200" y2="560" />
+    <line x1="0" y1="630" x2="1200" y2="630" />
+  </g>
+
+  <!-- Top Navigation Header -->
+  <rect x="30" y="25" width="1140" height="60" rx="12" fill="#0f1629" stroke="#293a5e" stroke-width="1" />
+  <circle cx="55" cy="55" r="8" fill="#ef4444" />
+  <circle cx="75" cy="55" r="8" fill="#f59e0b" />
+  <circle cx="95" cy="55" r="8" fill="#10b981" />
+  <text x="125" y="60" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700">MIPICPHYForge Pro</text>
+  <text x="320" y="60" fill="#94a3b8" font-family="monospace" font-size="13">MIPI C-PHY v2.1 3-Phase Symbol Studio &amp; Eye Timing Auditor [v1.0.0]</text>
+  <rect x="940" y="38" width="210" height="34" rx="6" fill="#070b14" stroke="#10b981" stroke-width="1" />
+  <text x="955" y="60" fill="#10b981" font-family="monospace" font-size="12" font-weight="600">● 10/10 PASS Normative</text>
+
+  <!-- Left Column: Synthesizer & Trio Waveform -->
+  <rect x="30" y="105" width="550" height="565" rx="12" fill="#0f1629" stroke="#1e293b" stroke-width="1" />
+  <text x="50" y="140" fill="#38bdf8" font-family="sans-serif" font-size="16" font-weight="700">CSI-2 / DSI-2 Physical Layer Parameters</text>
+
+  <!-- Form Fields -->
+  <rect x="50" y="165" width="160" height="50" rx="8" fill="#1a2540" stroke="#293a5e" stroke-width="1" />
+  <text x="65" y="185" fill="#94a3b8" font-family="sans-serif" font-size="11">Symbol Rate</text>
+  <text x="65" y="205" fill="#f8fafc" font-family="monospace" font-size="13" font-weight="600">2.50 Gsps (UI 0.4ns)</text>
+
+  <rect x="225" y="165" width="180" height="50" rx="8" fill="#1a2540" stroke="#293a5e" stroke-width="1" />
+  <text x="240" y="185" fill="#94a3b8" font-family="sans-serif" font-size="11">Initial Wire State</text>
+  <text x="240" y="205" fill="#f8fafc" font-family="monospace" font-size="13" font-weight="600">+x (A:+3/4, C:-3/4)</text>
+
+  <rect x="420" y="165" width="140" height="50" rx="8" fill="#1a2540" stroke="#293a5e" stroke-width="1" />
+  <text x="435" y="185" fill="#94a3b8" font-family="sans-serif" font-size="11">Physical Medium</text>
+  <text x="435" y="205" fill="#f8fafc" font-family="monospace" font-size="13" font-weight="600">3-Wire Trio (A,B,C)</text>
+
+  <rect x="50" y="225" width="245" height="50" rx="8" fill="#1a2540" stroke="#293a5e" stroke-width="1" />
+  <text x="65" y="245" fill="#94a3b8" font-family="sans-serif" font-size="11">Effective Trio Bitrate</text>
+  <text x="65" y="265" fill="#f8fafc" font-family="monospace" font-size="13" font-weight="600">5.71 Gbit/s per Trio</text>
+
+  <rect x="315" y="225" width="245" height="50" rx="8" fill="#1a2540" stroke="#293a5e" stroke-width="1" />
+  <text x="330" y="245" fill="#94a3b8" font-family="sans-serif" font-size="11">7:16 Encoding Efficiency</text>
+  <text x="330" y="265" fill="#f8fafc" font-family="monospace" font-size="13" font-weight="600">2.286 Bits / Symbol</text>
+
+  <!-- Trio Wire State Blocks -->
+  <text x="50" y="305" fill="#38bdf8" font-family="sans-serif" font-size="13" font-weight="700">3-Wire Trio Conductor Voltage Levels (A, B, C)</text>
+  <rect x="50" y="320" width="510" height="110" rx="8" fill="#000000" stroke="#1e293b" stroke-width="1" />
+
+  <!-- Wire States: 7 sample symbol transitions -->
+  <g transform="translate(60, 330)">
+    <!-- Block 0: +x -->
+    <rect x="0" y="0" width="62" height="90" rx="4" fill="#111a2e" stroke="#38bdf8" stroke-width="1" />
+    <text x="6" y="24" fill="#38bdf8" font-family="monospace" font-size="11" font-weight="bold">A: +3/4</text>
+    <text x="6" y="52" fill="#94a3b8" font-family="monospace" font-size="11">B:  0</text>
+    <text x="6" y="80" fill="#ef4444" font-family="monospace" font-size="11" font-weight="bold">C: -3/4</text>
+
+    <!-- Block 1: -y -->
+    <rect x="70" y="0" width="62" height="90" rx="4" fill="#111a2e" stroke="#8b5cf6" stroke-width="1" />
+    <text x="76" y="24" fill="#38bdf8" font-family="monospace" font-size="11" font-weight="bold">A: +3/4</text>
+    <text x="76" y="52" fill="#ef4444" font-family="monospace" font-size="11" font-weight="bold">B: -3/4</text>
+    <text x="76" y="80" fill="#94a3b8" font-family="monospace" font-size="11">C:  0</text>
+
+    <!-- Block 2: +z -->
+    <rect x="140" y="0" width="62" height="90" rx="4" fill="#111a2e" stroke="#8b5cf6" stroke-width="1" />
+    <text x="146" y="24" fill="#94a3b8" font-family="monospace" font-size="11">A:  0</text>
+    <text x="146" y="52" fill="#ef4444" font-family="monospace" font-size="11" font-weight="bold">B: -3/4</text>
+    <text x="146" y="80" fill="#38bdf8" font-family="monospace" font-size="11" font-weight="bold">C: +3/4</text>
+
+    <!-- Block 3: -x -->
+    <rect x="210" y="0" width="62" height="90" rx="4" fill="#111a2e" stroke="#8b5cf6" stroke-width="1" />
+    <text x="216" y="24" fill="#ef4444" font-family="monospace" font-size="11" font-weight="bold">A: -3/4</text>
+    <text x="216" y="52" fill="#94a3b8" font-family="monospace" font-size="11">B:  0</text>
+    <text x="216" y="80" fill="#38bdf8" font-family="monospace" font-size="11" font-weight="bold">C: +3/4</text>
+
+    <!-- Block 4: +y -->
+    <rect x="280" y="0" width="62" height="90" rx="4" fill="#111a2e" stroke="#8b5cf6" stroke-width="1" />
+    <text x="286" y="24" fill="#ef4444" font-family="monospace" font-size="11" font-weight="bold">A: -3/4</text>
+    <text x="286" y="52" fill="#38bdf8" font-family="monospace" font-size="11" font-weight="bold">B: +3/4</text>
+    <text x="286" y="80" fill="#94a3b8" font-family="monospace" font-size="11">C:  0</text>
+
+    <!-- Block 5: -z -->
+    <rect x="350" y="0" width="62" height="90" rx="4" fill="#111a2e" stroke="#8b5cf6" stroke-width="1" />
+    <text x="356" y="24" fill="#94a3b8" font-family="monospace" font-size="11">A:  0</text>
+    <text x="356" y="52" fill="#38bdf8" font-family="monospace" font-size="11" font-weight="bold">B: +3/4</text>
+    <text x="356" y="80" fill="#ef4444" font-family="monospace" font-size="11" font-weight="bold">C: -3/4</text>
+
+    <!-- Block 6: +x -->
+    <rect x="420" y="0" width="62" height="90" rx="4" fill="#111a2e" stroke="#10b981" stroke-width="2" />
+    <text x="426" y="24" fill="#38bdf8" font-family="monospace" font-size="11" font-weight="bold">A: +3/4</text>
+    <text x="426" y="52" fill="#94a3b8" font-family="monospace" font-size="11">B:  0</text>
+    <text x="426" y="80" fill="#ef4444" font-family="monospace" font-size="11" font-weight="bold">C: -3/4</text>
+  </g>
+
+  <!-- Metrics Box -->
+  <rect x="50" y="445" width="510" height="135" rx="8" fill="#1a2540" stroke="#293a5e" stroke-width="1" />
+  <text x="65" y="475" fill="#f8fafc" font-family="sans-serif" font-size="13" font-weight="bold">Physical Layer &amp; Embedded Clock Metrics</text>
+  
+  <text x="65" y="505" fill="#94a3b8" font-family="monospace" font-size="11">Unit Interval (UI): <tspan fill="#38bdf8">0.400 ns (400 ps)</tspan> | Clock Line: <tspan fill="#10b981">EMBEDDED (No Clock Pair Needed)</tspan></text>
+  <text x="65" y="530" fill="#94a3b8" font-family="monospace" font-size="11">Base-5 Permutations: <tspan fill="#8b5cf6">5^7 = 78,125 &gt; 65,536 (Bijective 16-bit Mapping)</tspan></text>
+  <text x="65" y="555" fill="#94a3b8" font-family="monospace" font-size="11">Packet CRC: <tspan fill="#10b981">0xC350 (CCITT-16 Valid)</tspan> | Common-Mode Current: <tspan fill="#10b981">Zero (Low EMI)</tspan></text>
+
+  <rect x="50" y="605" width="510" height="45" rx="8" fill="url(#primary)" />
+  <text x="180" y="633" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="700">Synthesize &amp; Audit C-PHY Transmission</text>
+
+  <!-- Right Column: 10-Point Normative Auditor -->
+  <rect x="610" y="105" width="560" height="565" rx="12" fill="#0f1629" stroke="#1e293b" stroke-width="1" />
+  <text x="635" y="140" fill="#10b981" font-family="sans-serif" font-size="16" font-weight="700">MIPI C-PHY v2.1 Normative Architectural Auditor</text>
+  <text x="635" y="160" fill="#94a3b8" font-family="sans-serif" font-size="11">Camera &amp; Display Physical Layer Conformance Suite</text>
+
+  <!-- 10 Rules -->
+  <g transform="translate(635, 175)">
+    <!-- Rule 1 -->
+    <rect x="0" y="0" width="510" height="38" rx="6" fill="#1a2540" stroke="#10b981" stroke-width="1" />
+    <circle cx="20" cy="19" r="7" fill="#10b981" />
+    <text x="16" y="23" fill="#070b14" font-family="sans-serif" font-size="10" font-weight="bold">✓</text>
+    <text x="40" y="23" fill="#f8fafc" font-family="monospace" font-size="12">RULE-CPHY-01: Symbol Rate Boundary (0.8-3.5 Gsps) [PASS]</text>
+
+    <!-- Rule 2 -->
+    <rect x="0" y="44" width="510" height="38" rx="6" fill="#1a2540" stroke="#10b981" stroke-width="1" />
+    <circle cx="20" cy="63" r="7" fill="#10b981" />
+    <text x="16" y="67" fill="#070b14" font-family="sans-serif" font-size="10" font-weight="bold">✓</text>
+    <text x="40" y="23" fill="#f8fafc" font-family="monospace" font-size="12">RULE-CPHY-02: 3-Phase Wire State Exclusivity [PASS]</text>
+
+    <!-- Rule 3 -->
+    <rect x="0" y="88" width="510" height="38" rx="6" fill="#1a2540" stroke="#10b981" stroke-width="1" />
+    <circle cx="20" cy="107" r="7" fill="#10b981" />
+    <text x="16" y="111" fill="#070b14" font-family="sans-serif" font-size="10" font-weight="bold">✓</text>
+    <text x="40" y="23" fill="#f8fafc" font-family="monospace" font-size="12">RULE-CPHY-03: Transition Non-Zero Property [PASS]</text>
+
+    <!-- Rule 4 -->
+    <rect x="0" y="132" width="510" height="38" rx="6" fill="#1a2540" stroke="#10b981" stroke-width="1" />
+    <circle cx="20" cy="151" r="7" fill="#10b981" />
+    <text x="16" y="155" fill="#070b14" font-family="sans-serif" font-size="10" font-weight="bold">✓</text>
+    <text x="40" y="23" fill="#f8fafc" font-family="monospace" font-size="12">RULE-CPHY-04: 16-Bit to 7-Symbol Mapping [PASS]</text>
+
+    <!-- Rule 5 -->
+    <rect x="0" y="176" width="510" height="38" rx="6" fill="#1a2540" stroke="#10b981" stroke-width="1" />
+    <circle cx="20" cy="195" r="7" fill="#10b981" />
+    <text x="16" y="199" fill="#070b14" font-family="sans-serif" font-size="10" font-weight="bold">✓</text>
+    <text x="40" y="23" fill="#f8fafc" font-family="monospace" font-size="12">RULE-CPHY-05: Unit Interval (UI) Timing Jitter [PASS]</text>
+
+    <!-- Rule 6 -->
+    <rect x="0" y="220" width="510" height="38" rx="6" fill="#1a2540" stroke="#10b981" stroke-width="1" />
+    <circle cx="20" cy="239" r="7" fill="#10b981" />
+    <text x="16" y="243" fill="#070b14" font-family="sans-serif" font-size="10" font-weight="bold">✓</text>
+    <text x="40" y="23" fill="#f8fafc" font-family="monospace" font-size="12">RULE-CPHY-06: CCITT-16 Packet Data Integrity [PASS]</text>
+
+    <!-- Rule 7 -->
+    <rect x="0" y="264" width="510" height="38" rx="6" fill="#1a2540" stroke="#10b981" stroke-width="1" />
+    <circle cx="20" cy="283" r="7" fill="#10b981" />
+    <text x="16" y="287" fill="#070b14" font-family="sans-serif" font-size="10" font-weight="bold">✓</text>
+    <text x="40" y="23" fill="#f8fafc" font-family="monospace" font-size="12">RULE-CPHY-07: Embedded Clock Recovery Eye Margin [PASS]</text>
+
+    <!-- Rule 8 -->
+    <rect x="0" y="308" width="510" height="38" rx="6" fill="#1a2540" stroke="#10b981" stroke-width="1" />
+    <circle cx="20" cy="327" r="7" fill="#10b981" />
+    <text x="16" y="331" fill="#070b14" font-family="sans-serif" font-size="10" font-weight="bold">✓</text>
+    <text x="40" y="23" fill="#f8fafc" font-family="monospace" font-size="12">RULE-CPHY-08: Differential Trio Voltage Amplitude [PASS]</text>
+
+    <!-- Rule 9 -->
+    <rect x="0" y="352" width="510" height="38" rx="6" fill="#1a2540" stroke="#10b981" stroke-width="1" />
+    <circle cx="20" cy="371" r="7" fill="#10b981" />
+    <text x="16" y="375" fill="#070b14" font-family="sans-serif" font-size="10" font-weight="bold">✓</text>
+    <text x="40" y="23" fill="#f8fafc" font-family="monospace" font-size="12">RULE-CPHY-09: Multi-Trio Deskew Synchronization [PASS]</text>
+
+    <!-- Rule 10 -->
+    <rect x="0" y="396" width="510" height="38" rx="6" fill="#1a2540" stroke="#38bdf8" stroke-width="1" />
+    <circle cx="20" cy="415" r="7" fill="#38bdf8" />
+    <text x="16" y="419" fill="#070b14" font-family="sans-serif" font-size="10" font-weight="bold">i</text>
+    <text x="40" y="23" fill="#f8fafc" font-family="monospace" font-size="12">RULE-CPHY-10: Sensor Serialization Latency (&lt; 1us) [PASS]</text>
+  </g>
+
+  <!-- Bottom Strip -->
+  <rect x="635" y="630" width="510" height="30" rx="6" fill="#1a2540" stroke="#293a5e" stroke-width="1" />
+  <text x="645" y="650" fill="#94a3b8" font-family="monospace" font-size="11">C-PHY: 3 Conductors (A,B,C) | 5 Transitions | 7:16 Mapping | Up to 8.0 Gbps/trio</text>
+</svg>
